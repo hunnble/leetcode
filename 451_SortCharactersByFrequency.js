@@ -15,6 +15,7 @@ var frequencySort = function(s) {
     for (var key in hash) {
         charsArr.push(new Array(hash[key] + 1).join(key));
     }
+    // sort排序不正确...
     // charsArr.sort(function(chars1, chars2) {console.log(chars1.length, chars2.length, chars1, chars2)
     //     return chars1.length < chars2.length;
     // });

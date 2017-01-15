@@ -1,2 +1,2 @@
 # leetcode
-my solutions of LeetCode OJ
+Leetcode写题记录, 使用Python/JavaScript
