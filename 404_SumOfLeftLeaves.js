@@ -10,23 +10,15 @@
  * @return {number}
  */
 var sumOfLeftLeaves = function(root) {
-    tra(root, false);
-    return c;
+    return tra(root, false);
 };
-
-var c = 0;
 
 function tra(node, should) {
     if (!node) {
-        return;
+        return 0;
     }
     if (!node.left && !node.right) {
-        if (should) {
-            c += node.val;
-        }
-        return;
-    } else {
-        tra(node.left, true);
-        tra(node.right, false);
+        return should ? node.val : 0;
     }
+    return tra(node.left, true) + tra(node.right, false);
 }
