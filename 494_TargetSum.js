@@ -10,9 +10,11 @@ var findTargetSumWays = function(nums, S) {
     var all = nums.reduce(function(a, b) {
         return a + b;
     });
+
     if (all < nums || -all > nums) {
         return 0;
     }
+
     var r = {}
     if (nums[0] === 0) {
         r[0] = 2
@@ -20,6 +22,7 @@ var findTargetSumWays = function(nums, S) {
         r[nums[0]] = 1;
         r[-1 * nums[0]] = 1;
     }
+    
     for (var i = 1, l = nums.length; i < l; ++i) {
         var t = {};
 
@@ -40,6 +43,7 @@ var findTargetSumWays = function(nums, S) {
             t[j + nums[i]] = r[j] + t[j + nums[i]];
             t[j - nums[i]] = r[j] + t[j - nums[i]];
         }
+
         r = t;
     }
 
