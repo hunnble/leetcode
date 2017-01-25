@@ -22,7 +22,7 @@ var findTargetSumWays = function(nums, S) {
         r[nums[0]] = 1;
         r[-1 * nums[0]] = 1;
     }
-    
+
     for (var i = 1, l = nums.length; i < l; ++i) {
         var t = {};
 
