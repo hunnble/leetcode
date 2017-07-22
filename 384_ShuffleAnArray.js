@@ -31,7 +31,7 @@ Solution.prototype.shuffle = function() {
     return arr;
 };
 
-/** 
+/**
  * Your Solution object will be instantiated and called as such:
  * var obj = Object.create(Solution).createNew(nums)
  * var param_1 = obj.reset()
