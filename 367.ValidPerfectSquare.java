@@ -1,9 +1,10 @@
 class Solution {
     public boolean isPerfectSquare(int num) {
-        int tmp = num;
-        while (tmp * tmp > num) {
-            tmp = (tmp + num / tmp) >> 1;
+        int i = 1;
+        while (num > 0) {
+            num -= i;
+            i += 2;
         }
-        return tmp * tmp == num;
+        return num == 0;
     }
 }
