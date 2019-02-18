@@ -16,3 +16,10 @@ class Solution(object):
         res = []
         self.pushChar(nums, [], res)
         return res
+
+    def permute1(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        return map(list, itertools.permutations(nums))
