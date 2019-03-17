@@ -1,3 +1,5 @@
+from collections import Counter
+
 class Solution(object):
     def findAnagrams(self, s, p):
         """
